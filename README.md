@@ -15,8 +15,7 @@ Source files for Session Manager demo - YouTube
 
 # Part 2 
 
-## Link : [Connect to an EC2 Instance using AWS Systems Manager Session Manager | Part 2 of 2](https://youtu.be/KpgvbDMGbcs)
-## Video description
+## Link : [Connect to an EC2 Instance using AWS Systems Manager Session Manager | Part 2 of 2]([https://youtu.be/KpgvbDMGbcs](https://youtu.be/Ybl0rw3wz10)](https://docs.google.com/document/d/1OPaY8Ql-lK5g8XrLHN8G8RTVbC8WBZbm8IVJbh1B3NM/edit?usp=sharing))
 
  - AWS CLI & Session Manager Plugin Installation guide
  - Configure AWS CLI user
