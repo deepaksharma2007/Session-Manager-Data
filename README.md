@@ -1,27 +1,28 @@
 # Session-Manager-Data
 
-#Verify AWS CLI Installation
-aws --version
+# session-manager
+Source files for Session Manager demo - YouTube
 
-#Verify AWS Session Manager plugin
-session-manager-plugin --version
+# Part 1 
 
-#Verify AWS CLI user
-aws sts get-caller-identity
+## Link : [Connect to an EC2 Instance using AWS Systems Manager Session Manager | Part 1 of 2](https://youtu.be/Ybl0rw3wz10)
+## Video description
 
-#Start a session
-aws ssm start-session --target <INSTANCE_ID>
+ - IAM permissions for user 
+ - IAM permissions for the instance
+ - Creating VPC endpoints for Session Manager
+ - Start a session from Amazon EC2 console
+ - Start a session from Session Manager console (legacy)
 
-#Input password as a secure string. Enter the below command which will prompt you for a password, then type a strong password and enter:
-$Password = Read-Host -AsSecureString
+# Part 2 
 
-#Create a local Widnows user
-New-LocalUser "<USERNAME>" -Password $Password
+## Link : [Connect to an EC2 Instance using AWS Systems Manager Session Manager | Part 2 of 2](https://youtu.be/KpgvbDMGbcs)
+## Video description
 
-#Add user to Remote Desktop Users group:
-Add-LocalGroupMember -Group "Remote Desktop Users" -Member "<USERNAME>"
+ - AWS CLI & Session Manager Plugin Installation guide
+ - Configure AWS CLI user
+ - Start a session from AWS CLI 
+ - Start a session using AWS Session Manager Port Forwarding (interactive)   
 
-#Start a RDP port forwarding session 
-aws ssm start-session --target <INSTANCE_ID> --document-name AWS-StartPortForwardingSession --parameters portNumber="3389",localPortNumber="<LOCAL_PORT>"
 
 
