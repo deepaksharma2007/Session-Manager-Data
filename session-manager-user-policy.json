@@ -1,3 +1,5 @@
+# WE need to modify only Region , Account ID and Instance_ID at line number 13
+
 {
     "Version": "2012-10-17",
     "Statement": [
